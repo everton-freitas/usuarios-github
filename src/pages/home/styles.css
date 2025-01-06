@@ -1,0 +1,184 @@
+.conteudo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.background {
+    height: 90vh;
+    opacity: 0.1;
+    position: absolute;
+    left: -323px;
+}
+
+.info {
+    width: 60%;
+    margin-top: 80px;
+    color: #fff;
+}
+
+input {
+    border: 1px solid gray;
+    padding: 7px 10px;
+    width: 40%;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+}
+
+input:focus {
+    background-color: transparent;
+
+    outline: none;
+}
+
+
+
+button {
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 7px 30px;
+    border-radius: 20px;
+    background-color: rgba(85, 85, 85, 0.366);
+    border: 1px solid gray;
+    color: gray;
+}
+
+.info-usuario {
+    display: flex;
+    margin-top: 50px;
+    color: gray;
+    width: 55%;
+}
+
+.info-usuario img {
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid gray;
+
+}
+
+.descricao-usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    height: 100px;
+}
+
+.repositorio {
+    width: 55%;
+    margin: 10px 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.pesquise {
+    color: gray;
+    width: 55%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1250px) {
+    .conteudo {
+        justify-content: center;
+    }
+
+
+
+    .info-usuario {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .info-usuario img {
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+
+    .descricao-usuario {
+        margin-left: 0;
+        text-align: center;
+
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .input-button {
+        display: contents;
+        width: 100vw;
+    }
+
+    input {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 30%;
+    }
+
+    .pesquise {
+        width: 80%;
+    }
+
+    .background {
+        z-index: -1;
+    }
+
+    .repos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .info-usuario {
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+    }
+
+
+    .info-usuario img {
+        margin-bottom: 10px;
+        width: 160px;
+
+    }
+
+    .descricao-usuario {
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .background {
+        max-width: 0;
+
+    }
+
+    button {
+        width: 40%;
+    }
+}

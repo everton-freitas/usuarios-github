@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #102128;
+}
+
+hr {
+    border: 1px solid gray;
+}
+
+.hr {
+    width: 55%;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1250px) {
+    .hr {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .hr {
+        width: 85%;
+    }
+}
